@@ -1,0 +1,11 @@
+<div class="home-container">
+    <h1 class="main-heading">Money Transfer System</h1>
+    <h2>Welcome Back!</h2>
+
+    <div class="btn-grp">
+        <a *ngIf="accountId" [routerLink]="['/getdetails', accountId]" class="btn btn-warning">GET DETAILS</a>
+        <a *ngIf="accountId" [routerLink]="['/balance', accountId]" class="btn btn-primary">GET BALANCE</a>
+        <a *ngIf="accountId" [routerLink]="['/transfer', accountId]" class="btn btn-primary">TRANSFER MONEY</a>
+        <a *ngIf="accountId" [routerLink]="['/history', accountId]" class="btn btn-primary">TRANSACTION HISTORY</a>
+    </div>
+</div>

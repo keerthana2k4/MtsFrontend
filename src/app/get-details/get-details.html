@@ -1,0 +1,27 @@
+<div class="get-details-container">
+<h1 class="title">Account Details</h1>
+<div>
+    <table class="custom-table" *ngIf="accountresp">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>BALANCE</th>
+                <th>STATUS</th>
+                <th>VERSION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="accountresp">
+                <td>{{ accountresp.id }}</td>
+                <td>{{ accountresp.holderName }}</td>
+                <td>{{ accountresp.status }}</td>
+                <td>{{ accountresp.version }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Back Button -->
+    <button *ngIf="showBackButton" (click)="navigate()">Back</button>
+</div>
+</div>

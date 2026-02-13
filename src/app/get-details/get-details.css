@@ -1,0 +1,142 @@
+/* Main container */
+.get-details-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Page Title */
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Card-style container for account details */
+.custom-table {
+  width: 70%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  font-family: 'Segoe UI', sans-serif;
+
+  /* Center all text */
+  text-align: left;
+
+  /* Ensure spacing consistency */
+  border-collapse: collapse;
+}
+
+/* Hide table header */
+.custom-table thead {
+  display: none;
+}
+
+/* Each "row" behaves like a card line */
+.custom-table tr {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Each item is shown one below the other */
+.custom-table td {
+  display: block;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+
+  background: #f5f8ff;
+  border-radius: 10px;
+
+  border: 1px solid #d9e5ff;
+  margin-bottom: 10px;
+
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.custom-table td:hover {
+  background: #e9f0ff;
+}
+
+/* Remove bottom border of last entry */
+.custom-table tr:last-child td:last-child {
+  margin-bottom: 0;
+}
+
+/* Labels before each value */
+.custom-table td::before {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c7be5; /* Theme color label */
+  margin-bottom: 5px;
+}
+
+/* Custom labels */
+.custom-table td:nth-child(1)::before {
+  content: "ID";
+}
+
+.custom-table td:nth-child(2)::before {
+  content: "Name";
+}
+
+.custom-table td:nth-child(3)::before {
+  content: "Status";
+}
+
+.custom-table td:nth-child(4)::before {
+  content: "Version";
+}
+
+/* Back Button */
+button {
+  display: block;
+  margin: 30px auto 10px auto;
+  padding: 12px 25px;
+  background-color: #3b7ddd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.15);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .custom-table {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .custom-table td {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}

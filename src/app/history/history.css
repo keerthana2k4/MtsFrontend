@@ -1,0 +1,132 @@
+/* Main container spacing */
+.container {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card styling */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header */
+.card-header {
+  background: #3b7ddd !important;
+  padding: 18px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.card-header h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Table styling */
+table {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+/* Table Head */
+table thead {
+  background-color: #e8f0ff;
+}
+
+table thead th {
+  font-weight: 600;
+  color: #2c7be5;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 14px;
+}
+
+/* Table Body */
+table tbody tr {
+  transition: 0.15s ease-in-out;
+}
+
+table tbody tr:hover {
+  background-color: #f5f9ff;
+}
+
+table td {
+  padding: 14px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Debit/Credit Amount Colors */
+.debit {
+  color: #d9534f;      /* Red for sent */
+  font-weight: 600;
+}
+
+.credit {
+  color: #28a745;      /* Green for received */
+  font-weight: 600;
+}
+
+/* Back Button */
+.btn-outline-secondary {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #3b7ddd;
+  transition: 0.25s ease-in-out;
+  text-decoration: none;
+  color: white !important;
+  text-align: center;
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  background-color: #3b7ddd;
+  transform: translateY(-2px);
+}
+
+/* Card body spacing */
+.card-body {
+  padding: 25px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  table thead {
+    display: none; /* Optional: hide header on mobile for cleaner view */
+  }
+
+  table tbody td {
+    display: block;
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  table tbody tr {
+    margin-bottom: 15px;
+    background: #f9fbff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  table tbody td::before {
+    font-weight: 600;
+    color: #2c7be5;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  table tbody td:nth-child(1)::before { content: "Date"; }
+  table tbody td:nth-child(2)::before { content: "Type"; }
+  table tbody td:nth-child(3)::before { content: "Account"; }
+  table tbody td:nth-child(4)::before { content: "Amount"; }
+  table tbody td:nth-child(5)::before { content: "Status"; }
+}

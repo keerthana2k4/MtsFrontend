@@ -1,0 +1,11 @@
+<div class="get-balance-container">
+  <div class="balance">
+    <h1>Your Balance:</h1>
+    <p>₹{{ balance }}</p>
+  </div>
+
+  
+  <div *ngIf="showBackButton" class="back-button">
+    <button (click)="navigate()">Back</button>
+  </div>
+</div>

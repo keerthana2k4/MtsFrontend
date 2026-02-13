@@ -1,0 +1,27 @@
+<div id="login-box">
+  <h2>Login Here</h2>
+  <div style="color: red" *ngIf="error">{{ error }}</div>
+  <form name="loginForm" (submit)="doLogin()">
+    <table>
+      <thead>
+        <tr>
+          <th>User:</th>
+          <th>Password:</th>
+        </tr>
+      </thead>
+      <tbody> <!-- tbody should wrap the table rows -->
+        <tr>
+          <td><input type="text" name="username" [(ngModel)]="username" placeholder="Enter Username" /></td>
+        </tr>
+        <tr>
+          <td><input type="password" name="password" [(ngModel)]="password" placeholder="Enter Password" /></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><input name="submit" type="submit" value="Login" /></td>
+        </tr>
+      </tfoot>
+    </table>
+  </form>
+</div>
