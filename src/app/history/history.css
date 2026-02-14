@@ -97,6 +97,15 @@ table td {
   padding: 25px;
 }
 
+button.btn-outline-primary {
+  margin-right: 10px;
+}
+
+button.btn-outline-success {
+  margin-left: 10px;
+}
+
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   table thead {

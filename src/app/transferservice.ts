@@ -21,6 +21,6 @@ export class Transferservice {
   }
  
   getTransactions(accountId: number): Observable<Transactionlog[]> {
-    return this.http.get<Transactionlog[]>(`${this.URI2}/${accountId}/transactions`);
+    return this.http.get<Transactionlog[]>(`${this.URI1}/${accountId}/transactions`);
   }
 }

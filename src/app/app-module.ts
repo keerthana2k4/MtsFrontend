@@ -13,6 +13,7 @@ import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/
 import { HttpInterceptor } from './httpinterceptor';
 import { Transfer } from './transfer/transfer';
 import { History } from './history/history';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { History } from './history/history';
     AppRoutingModule,
     CommonModule,
     RouterModule.forRoot([]),
+    ReactiveFormsModule,
     FormsModule
   ],
 
