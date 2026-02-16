@@ -8,4 +8,8 @@
         <a *ngIf="accountId" [routerLink]="['/transfer', accountId]" class="btn btn-primary">TRANSFER MONEY</a>
         <a *ngIf="accountId" [routerLink]="['/history', accountId]" class="btn btn-primary">TRANSACTION HISTORY</a>
     </div>
+
+    <button mat-raised-button (click)="logout()">
+        Logout
+      </button>
 </div>

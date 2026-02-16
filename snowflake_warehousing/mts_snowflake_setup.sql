@@ -1,0 +1,20 @@
+-- 0. Optional additional stage (named): internal stage for ad-hoc files
+CREATE OR REPLACE STAGE mts_internal_stage;
+
+-- 1. Create Warehouse
+CREATE OR REPLACE WAREHOUSE MTS_WAREHOUSE
+  WAREHOUSE_SIZE = 'XSMALL'
+  AUTO_SUSPEND = 60
+  AUTO_RESUME = TRUE;
+
+-- Set active warehouse
+USE WAREHOUSE MTS_WAREHOUSE;
+
+-- 2. Create Database
+CREATE OR REPLACE DATABASE MTS_DATABASE;
+
+-- 3. Create Schema
+CREATE OR REPLACE SCHEMA MTS_DATABASE.MTS_SCHEMA;
+
+USE DATABASE MTS_DATABASE;
+USE SCHEMA MTS_SCHEMA;
